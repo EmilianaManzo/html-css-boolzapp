@@ -9,7 +9,8 @@
   --eight-color:#fafafa;
   --ninth-color:#f5f5f5; 
   --tenth-color:#bbbec0;
-  --eleventh-color:#d7d8da;
+  --eleventh-color:#f3eeea;
+
 }
 
 *{
@@ -31,9 +32,9 @@ body{
 }
 
 /* UTILITY */
-/* .debug{
+.debug{
   border: 2px solid red;
-} */
+}
 
 .container{
   width: 80%;
@@ -74,10 +75,31 @@ body{
   text-align: center;
 }
 
+.text_end{
+  text-align: end;
+}
+
 i{
   font-size: 1.3rem;
   padding-right: 20px;
   cursor: pointer;
+}
+
+.text_chat{
+  height: 130px;
+  width: 60%;
+  max-width: 430px;
+  border-radius: 10px;
+  padding: 20px 15px;
+  font-size: .8rem;
+}
+
+.received{
+  background-color:white ;
+}
+
+.sent.active{
+  background-color: #d5f9ba;
 }
 
 .brd_radius{
@@ -99,7 +121,15 @@ i{
 }
 
 .pb_xs{
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.padd_xl{
+  padding: 50px 90px;
+}
+
+.mb_xs{
+  margin-bottom: 15px;
 }
 
 /* MAIN  */
@@ -211,14 +241,60 @@ main .container .col.right{
 }
 
 .col.left .chat .col .hour{
-  width: 30%;
+  width: 25%;
   height: 60%;
   padding-right: 20px;
 }
 
 
-
 /* colonna destra */
+
+.col.right .top h4{
+  color: black;
+}
+
+.col.right .top p{
+  font-size: .9rem;
+  color:#6b7376 ;
+}
+
+.col.right .center{
+  height: calc(100% - 140px);
+  background-image: url(../img/mine.jpg);
+  background-size: contain;
+}
+
+.col.right .center i{
+  color:#b8bbbd ;
+  font-size: .7rem;
+  padding: 0;
+}
+
+
+.col.right .bottom{
+  height: 70px;
+  background-color: var(--eleventh-color);
+  color: var(--fifth-color);
+}
+
+.col.right .bottom .icon{
+  width: 5%;
+  margin: 0 15px 0 30px;
+  color:#6b7376;
+}
+
+.col.right .bottom .text{
+  width: 90%;
+}
+
+.col.right .bottom input{
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  font-size: 0.9rem;
+  padding: 0 20px;
+}
 
 
 
