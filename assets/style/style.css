@@ -14,6 +14,12 @@
   --thirteenth-color:#b6b9bb;
   --fourteenth-color:#6b7376 ;
   --fifteenth-color:#b8bbbd;
+  /* darkmode */
+  --dark-topbar:#202c33;
+  --dark-bcg:#101b21;
+  --dark-text-icon:#8696a0;
+  --dark-border:#212b2f;
+  --dark-notification:#172229;
 }
 
 
@@ -36,7 +42,6 @@ body{
     #dadbd4 100%);
   overflow: hidden;
 }
-
 
 
 /* UTILITY */
@@ -206,11 +211,13 @@ main .container .col.right{
   color: var(--fifth-color);
 }
 
+
+
 /* colonna sinistra */
 
 /* Top  */
 .col.left .top{
-  border-right: 2px solid #var(--second-color) ;
+  border-right: 2px solid var(--second-color) ;
 }
 
 .col.left .top .img{
@@ -353,7 +360,7 @@ main .container .col.right{
 
 
 /* *******************************************
-    MEDIA QUERY
+MEDIA QUERY
 ******************************************* */
 
 /* Risoluzione tablet da 992 a 542 */
@@ -361,35 +368,36 @@ main .container .col.right{
   .dis_none{
     display: none;
   }
-
+  
   .fix-center{
     justify-content: center;
     align-items: center;
   }
-
+  
   .padd_xl_min{
     padding: 50px 40px ;
   }
-
+  
   .container{
     width: 100vw;
     height: 100vh;
     margin: 0;
   }
-
+  
   main .container .col.left{
     width: 100px;
   }
-
-
+  
+  
   main .col.left .top .img{
     width: 100%;
   }
-
+  
   main .col.left .chat{
     height: calc(100% - 70px);
   }
 }
+
 
 
 
@@ -403,5 +411,51 @@ main .container .col.right{
     width: 100%;
     margin: 10px 20px;
   }
-
+  
 }
+
+
+
+/* **************************
+        DARK MODE 
+************************** */
+
+/* body.dark{
+  background: black;
+  color: var(--dark-text-icon);
+}
+
+.col.left .top.dark,
+.col.right .top.dark,
+.col.right .bottom.dark{
+  background-color: var(--dark-topbar);
+}
+
+.col.left .top.dark{
+  border-right: 2px solid var(--dark-border) ;
+}
+
+.col.left .notification.dark,
+.col.left .search.dark{
+  background-color: var(--dark-notification);
+  border-bottom: 1px solid grey;
+}
+
+.col.left .notification.dark i{
+  color: var(--dark-text-icon);
+}
+
+.col.left .chat.dark{
+  background-color: var(--dark-bcg);
+  border: var(--dark-border);
+}
+
+.col.left .chat.dark .col{
+  border:1px solid var(--dark-border);
+}
+
+.col.right .center.dark{
+  filter: invert(100%);
+  color: red;
+}
+ */
