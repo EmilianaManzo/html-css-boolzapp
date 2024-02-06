@@ -1,6 +1,6 @@
 :root{
-  --first-color:#009688;
-  --second-color:#dadbd4;
+  --first-color:white;
+  --second-color:#d6d6d6;
   --third-color:#eaeaea;
   --fourth-color:#8edafc;
   --fifth-color:#b1b1b1;
@@ -10,14 +10,20 @@
   --ninth-color:#f5f5f5; 
   --tenth-color:#bbbec0;
   --eleventh-color:#f3eeea;
-
+  --twelth-color:#e7e7e7;
+  --thirteenth-color:#b6b9bb;
+  --fourteenth-color:#6b7376 ;
+  --fifteenth-color:#b8bbbd;
 }
+
+
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 body{
   font-family: "Lato", sans-serif;
@@ -31,17 +37,13 @@ body{
   overflow: hidden;
 }
 
+
+
 /* UTILITY */
+
 /* .debug{
   border: 2px solid red;
 } */
-
-.container{
-  width: 85%;
-  max-width:1200px;
-  height: 90vh;
-  margin: 20px auto;
-}
 
 .d_flex{
   display: flex;
@@ -71,22 +73,15 @@ body{
   justify-content: space-between;
 }
 
-
 .pos_rel{
   position: relative;
 }
 
-i{
-  font-size: 1.3rem;
-  padding-right: 20px;
-  cursor: pointer;
-}
-.text_c{
-  text-align: center;
-}
-
-.text_end{
-  text-align: end;
+.container{
+  width: 85%;
+  max-width:1200px;
+  height: 90vh;
+  margin: 20px auto;
 }
 
 .text_chat{
@@ -98,11 +93,17 @@ i{
 }
 
 .received{
-  background-color:white ;
+  background-color:var(--first-color) ;
 }
 
 .sent.active{
-  background-color: #d5f9ba;
+  background-color: var(--seventh-color);
+}
+
+i{
+  font-size: 1.3rem;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 ul li{
@@ -128,7 +129,7 @@ ul li:hover{
 }
 
 .box_shadow{
-  background-color: white;
+  background-color: var(--first-color);
   border-radius: 2px;
   box-shadow:0 0 5px var(--fifth-color);
 }
@@ -145,6 +146,17 @@ ul li:hover{
   overflow-x: hidden; 
   overflow-y: scroll;
 }
+
+
+/* posizione testi */
+.text_c{
+  text-align: center;
+}
+
+.text_end{
+  text-align: end;
+}
+
 
 /* Distanze */
 .p_xs{
@@ -198,7 +210,7 @@ main .container .col.right{
 
 /* Top  */
 .col.left .top{
-  border-right: 2px solid #d6d6d6;
+  border-right: 2px solid #var(--second-color) ;
 }
 
 .col.left .top .img{
@@ -217,7 +229,7 @@ main .container .col.right{
 
 .col.left .notification i{
   color: var(--fourth-color);
-  background-color: white;
+  background-color: var(--first-color);
   border-radius: 50%;
   padding: 13px 12px;
   margin: 0 15px;
@@ -243,7 +255,7 @@ main .container .col.right{
 .col.left .search .row{
   border: 2px solid var(--ninth-color);
   color: var(--eleventh-color);
-  background-color: white;
+  background-color: var(--first-color);
 }
 
 .col.left .search i{
@@ -262,18 +274,18 @@ main .container .col.right{
 /* Chat  */
 .col.left .chat{
   height: calc(100% - 200px);
-  background-color: white;
+  background-color: var(--first-color);
 }
 
 .col.left .chat .col{
   height: 80px;
   width: 100%;
-  border:2px solid #e7e7e7;
+  border:2px solid var(--twelth-color) ;
 }
 
 .col.left .chat .col p,
 .col.left .chat .col .hour{
-  color: #b6b9bb;
+  color: var(--thirteenth-color) ;
   font-size: .7rem;
 }
 
@@ -292,7 +304,7 @@ main .container .col.right{
 
 .col.right .top p{
   font-size: .9rem;
-  color:#6b7376 ;
+  color:var(--fourteenth-color)  ;
 }
 
 .col.right .center{
@@ -302,13 +314,13 @@ main .container .col.right{
 }
 
 .col.right .center i{
-  color:#b8bbbd ;
+  color:var(--fifteenth-color)  ;
   font-size: .7rem;
   padding: 0;
 }
 
 .col.right .center .time{
-  color: #b8bbbd;
+  color: var(--fifteenth-color) ;
   font-size: .5rem;
   position: absolute;
   bottom: 0;
@@ -323,7 +335,7 @@ main .container .col.right{
 .col.right .bottom .icon{
   width: 5%;
   margin: 0 15px 0 30px;
-  color:#6b7376;
+  color:var(--fourteenth-color) ;
 }
 
 .col.right .bottom .text{
@@ -391,6 +403,5 @@ main .container .col.right{
     width: 100%;
     margin: 10px 20px;
   }
-
 
 }
